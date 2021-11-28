@@ -1,5 +1,6 @@
-# # Exercises
-
+# The Python Workbook by Ben Stephenson
+# Introduction to Programming Exercises Chapter 1
+##########################################################################################################
 # # Exercise 2: Hello
 # # (9 Lines)
 # # Write a program that asks the user to enter his or her name. The program should
@@ -7,7 +8,7 @@
 
 # name = input("Enter you name: ")
 # print("Hello"+" "+name)
-
+##########################################################################################################
 # # Exercise 3: Area of a Room
 # # (Solved—13 Lines)
 # # Write a program that asks the user to enter the width and length of a room. Once
@@ -20,7 +21,7 @@
 # length = float(input("Enter the room length (in metres): "))
 # area = round(width * length,2)
 # print(area,"m")
-
+##########################################################################################################
 # # Exercise 4: Area of a Field
 # # (Solved—15 Lines)
 # # Create a program that reads the length and width of a farmer’s field from the user in
@@ -30,7 +31,7 @@
 # length = float(input("Enter the field length (in feet): "))
 # area = round((width * length)/43560,2)
 # print(area,"acres")
-
+##########################################################################################################
 # Exercise 5: Bottle Deposits
 # (Solved—15 Lines)
 # In many jurisdictions a small deposit is added to drink containers to encourage people
@@ -48,7 +49,7 @@
 # large_refund = large * 0.25
 # total_refund = small_refund + large_refund
 # print("$",round(float(total_refund),2))
-
+##########################################################################################################
 # Exercise 6: Tax and Tip
 # (Solved—17 Lines)
 # The program that you create for this exercise will begin by reading the cost of a meal
@@ -72,7 +73,7 @@
 # print("Tax: $","%.2f" % tax_value)
 # print("Total: $","%.2f" % total)
 # print("-------------------------------")
-
+##########################################################################################################
 # Exercise 7: Sum of the First n Positive Integers
 # (Solved—12 Lines)
 # Write a program that reads a positive integer, n, from the user and then displays the
@@ -81,7 +82,7 @@
 # n = float(input("Enter a number: "))
 # sum_of_integers = (n*(n+1))/2
 # print("The sum of the integers from 1 to",n,"is: ",sum_of_integers)
-
+##########################################################################################################
 # Exercise 8: Widgets and Gizmos
 # (15 Lines)
 # An online retailer sells two products: widgets and gizmos. Each widget weighs 75
@@ -142,7 +143,7 @@
 # print("Remainder A/B: ", remainder_a_div_b)
 # print("Log10a: ", log10a)
 # print("a to the power of b: ", a_to_the_power_of_b)
-
+##########################################################################################################
 # Exercise 11: Fuel Efficiency
 # In the United States, fuel efficiency for vehicles is normally expressed in miles-per gallon (MPG). 
 # In Canada, fuel efficiency is normally expressed in liters-per-hundred kilometers (L/100 km). Use 
