@@ -242,3 +242,27 @@
 # else:
 #     print("No such banknote")
 #########################################################################################
+# Exercise 44: Date to Holiday Name
+#
+# Canada has three national holidays which fall on the same dates each year.
+# Holiday | Date
+# New year’s day | January 1
+# Canada day | July 1
+# Christmas day | December 25
+# Write a program that reads a month and day from the user. If the month and day
+# match one of the holidays listed previously then your program should display the
+# holiday’s name. Otherwise your program should indicate that the entered month and
+# day do not correspond to a fixed-date holiday.
+#
+# day = int(input("Enter the day: "))
+# month = input("Enter the month: ")
+# if day == 1 and month == "January":
+#     print("New year's day")
+# elif day == 1 and month == "July":
+#     print("Canada Day")
+# elif day ==25 and month == "December":
+#     print("Christmas Day")
+# else:
+#     print("Date does not correspond to a national holiday")
+# #
+#########################################################################################
