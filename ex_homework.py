@@ -1,18 +1,7 @@
-# The Python Workbook by Ben Stephenson
-# Chapter 2 - If Statement Exercises
-#################################################################
-# Exercise 34: Even or odd?
-# Write a program that reads an integer from the user. Then your program should
-# display a message indicating whether the integer is even or odd.
+# Completion of some exercises in Python from the workbook
+# Using if.....elif....else
 #
-# entry = int(input("Please enter a number: "))
-# if entry%2 == 0:
-#     print("The number is even")
-# else:
-#     print("The number is odd") 
-##################################################################   
 # # Exercise 35 - Dog Years
-#
 # It is commonly said that one human year is equivalent to 7 dog years. However this
 # simple conversion fails to recognize that dogs reach adulthood in approximately two
 # years. As a result, some people believe that it is better to count each of the first two
@@ -32,7 +21,7 @@
 # else:
 #     dog_years = (2*10.5)+((entry-2)*4)
 # print(dog_years)
-#########################################################################################
+#---------------------------------------------------------------------------------------
 # Exercise 36 - Vowel or Consonant
 #
 # In this exercise you will create a program that reads a letter of the alphabet from the
@@ -57,14 +46,13 @@
 #         print("sometimes a vowel, sometimes a consonant")
 # else: 
 #         print("consonant")
-#########################################################################################
+#---------------------------------------------------------------------------------------
 # Exercise 37 - Name That Shape
 #
-# Write a program that determines the name of a shape from its number of sides. Read
-# the number of sides from the user and then report the appropriate name as part of
-# a meaningful message. Your program should support shapes with anywhere from 3
-# up to (and including) 10 sides. If a number of sides outside of this range is entered
-# then your program should display an appropriate error message.
+# The length of a month varies from 28 to 31 days. In this exercise you will create
+# a program that reads the name of a month from the user as a string. Then your
+# program should display the number of days in that month. Display “28 or 29 days”
+# for February so that leap years are addressed.
 # 
 # entry = int(input("Enter the sides of the shape: "))
 # if entry <3 or entry >10:
@@ -75,19 +63,9 @@
 #     print("Square")
 # elif entry==5:
 #     print("Pentagon")
-# elif entry == 6:
-#     print("Hexagon")
-# elif entry == 7:
-#     print("Heptagon")
-# elif entry == 8:
-#     print("Octagon")
-# elif entry == 9:
-#     print("Nonagon")
-# elif entry == 10:
-#     print("Decagon")
-
-#########################################################################################
-# 
+# else:
+#     print("Whatever")
+#---------------------------------------------------------------------------------------
 # Exercise 38 - Month Name to Number of Days
 #
 # The length of a month varies from 28 to 31 days. In this exercise you will create
@@ -104,7 +82,7 @@
 #     print(30)
 # else:
 #     print("Not a valid month")
-#########################################################################################
+#---------------------------------------------------------------------------------------
 # Exercise 39 - Sound Levels
 #
 # The following table lists the sound level in decibels for several common noises.
@@ -141,25 +119,7 @@
 #     print("Between quiet room and Alarm clock")
 # else:
 #     print("Quieter than a quiet room!")
-#########################################################################################
-# Exercise 40: Name that Triangle
-# A triangle can be classified based on the lengths of its sides as equilateral, isosceles
-# or scalene. All 3 sides of an equilateral triangle have the same length. An isosceles
-# triangle has two sides that are the same length, and a third side that is a different
-# length. If all of the sides have different lengths then the triangle is scalene.
-# Write a program that reads the lengths of 3 sides of a triangle from the user.
-# Display a message indicating the type of the triangle.
-# side1 = int(input("Enter the length of side 1: "))
-# side2 = int(input("Enter the length of side 2: "))
-# side3 = int(input("Enter the length of side 3: "))
-# if side1 == side2 == side3:
-#     print("Equilateral")
-# elif side1 != side2 and side2 != side3 and side1 != side3:
-#     print("Scalene")
-# else: 
-#     print("Isosceles")
-#
-#########################################################################################
+#---------------------------------------------------------------------------------------
 # Exercise 41 - Note to Frequency
 # 
 # The following table lists an octave of music notes, beginning with middle C, along
@@ -207,38 +167,34 @@
 
 # entry_frequency = base_result/2**(4-entry_octave)
 # print(entry_frequency)
-#########################################################################################
-
-# Exercise 41 - Note to Frequency
-# It is common for images of a country’s previous leaders, or other individuals of historical significance, to appear on its money. The individuals that appear on banknotes
-# in the United States are listed in Table 2.1. Write a program that begins by reading the denomination of a banknote from the
-# user. Then your program should display the name of the individual that appears on the banknote of the entered amount. An appropriate error message should be displayed if no such note exists
-# Table 2.1 Individuals that appear on Banknotes 
-
-# Individual | Amount
-# George Washington | $1
-# Thomas Jefferson | $2
-# Abraham Lincoln | $5
-# Alexander Hamilton | $10
-# Andrew Jackson | $20
-# Ulysses S. Grant | $50
-# Benjamin Franklin | $100
+#---------------------------------------------------------------------------------------
+# Exercise 42 - Frequency to note
 #
-# entry = int(input("Enter the banknote: "))
-# if entry == 1:
-#     print("George Washington")
-# elif entry == 2:
-#     print("Thomas Jefferson")
-# elif entry == 5:
-#     print("Abraham Lincoln")
-# elif entry == 10:
-#     print("Alexander Hamilton")
-# elif entry == 20:
-#     print("Andrew Jackson")
-# elif entry == 50:
-#     print("Ulysses S. Grant")
-# elif entry == 100:
-#     print("Benjamin Franklin")
+# # In the previous question you converted from note name to frequency. In this question
+# you will write a program that reverses that process. Begin by reading a frequency
+# from the user. If the frequency is within one Hertz of a value listed in the table in
+# the previous question then report the name of the note. Otherwise report that the
+# frequency does not correspond to a known note. In this exercise you only need to
+# consider the notes listed in the table. There is no need to consider notes from other
+# octaves.
+#
+# entry = ""
+# note = ""
+# entry = float(input("Enter the frequency: "))
+# if entry - 261.63 <=1 and entry - 261.63 >=-1:
+#     note = "C"
+# elif entry - 293.66 <=1 and entry - 293.66 >=-1:
+#     note = "D"
+# elif entry - 329.63 <=1 and entry - 329.63 >=-1:
+#     note = "E"
+# elif entry - 349.23 <=1 and entry - 349.23 >=-1:
+#     note = "F"
+# elif entry - 392.00 <=1 and entry - 392.00 >=-1:
+#     note = "G"
+# elif entry - 440.00 <=1 and entry - 440.00 >=-1:
+#     note = "A"
+# elif entry - 493.88 <=1 and entry - 493.88 >=-1:
+#     note = "B"
 # else:
-#     print("No such banknote")
-#########################################################################################
+#     print("Not in this range")
+# print(note)

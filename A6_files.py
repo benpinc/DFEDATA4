@@ -1,0 +1,5 @@
+myfile = open('newfileforfiles')
+chars = myfile.read()
+# chars.insert(2,"I like files")
+# chars.append("Cheese is pretty good to eat")
+print(chars)
