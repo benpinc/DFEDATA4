@@ -5,11 +5,11 @@
 # Write a program that reads an integer from the user. Then your program should
 # display a message indicating whether the integer is even or odd.
 #
-# entry = int(input("Please enter a number: "))
-# if entry%2 == 0:
-#     print("The number is even")
-# else:
-#     print("The number is odd") 
+entry = int(input("Please enter a number: "))
+if entry%2 == 0:
+    print("The number is even")
+else:
+    print("The number is odd") 
 ##################################################################   
 # # Exercise 35 - Dog Years
 #
@@ -24,14 +24,14 @@
 # years. Your program should display an appropriate error message if the user enters
 # a negative number
 #
-# entry = int(input("Enter your age: "))
-# if entry <0:
-#     print("error")
-# elif entry <=2:
-#     dog_years = entry*10.5
-# else:
-#     dog_years = (2*10.5)+((entry-2)*4)
-# print(dog_years)
+entry = int(input("Enter your age: "))
+if entry <0:
+    print("error")
+elif entry <=2:
+    dog_years = entry*10.5
+else:
+    dog_years = (2*10.5)+((entry-2)*4)
+print(dog_years)
 #########################################################################################
 # Exercise 36 - Vowel or Consonant
 #
@@ -42,21 +42,21 @@
 # a consonant. Otherwise your program should display a message indicating that the
 # letter is a consonant.
 #
-# letter_entry = str(input("Enter a letter: "))
-# if(letter_entry)==('a'):
-#         print("vowel")
-# elif(letter_entry)==('e'):
-#         print("vowel")
-# elif(letter_entry)=='i':
-#         print("vowel")
-# elif(letter_entry)=="o":
-#         print("vowel")
-# elif(letter_entry)=="u":
-#         print("vowel")
-# elif(letter_entry)=="y":
-#         print("sometimes a vowel, sometimes a consonant")
-# else: 
-#         print("consonant")
+letter_entry = str(input("Enter a letter: "))
+if(letter_entry)==('a'):
+        print("vowel")
+elif(letter_entry)==('e'):
+        print("vowel")
+elif(letter_entry)=='i':
+        print("vowel")
+elif(letter_entry)=="o":
+        print("vowel")
+elif(letter_entry)=="u":
+        print("vowel")
+elif(letter_entry)=="y":
+        print("sometimes a vowel, sometimes a consonant")
+else: 
+        print("consonant")
 #########################################################################################
 # Exercise 37 - Name That Shape
 #
@@ -66,25 +66,25 @@
 # up to (and including) 10 sides. If a number of sides outside of this range is entered
 # then your program should display an appropriate error message.
 # 
-# entry = int(input("Enter the sides of the shape: "))
-# if entry <3 or entry >10:
-#     print("this is outside of the range")
-# elif entry == 3:
-#     print("Triangle")
-# elif entry ==4:
-#     print("Square")
-# elif entry==5:
-#     print("Pentagon")
-# elif entry == 6:
-#     print("Hexagon")
-# elif entry == 7:
-#     print("Heptagon")
-# elif entry == 8:
-#     print("Octagon")
-# elif entry == 9:
-#     print("Nonagon")
-# elif entry == 10:
-#     print("Decagon")
+entry = int(input("Enter the sides of the shape: "))
+if entry <3 or entry >10:
+    print("this is outside of the range")
+elif entry == 3:
+    print("Triangle")
+elif entry ==4:
+    print("Square")
+elif entry==5:
+    print("Pentagon")
+elif entry == 6:
+    print("Hexagon")
+elif entry == 7:
+    print("Heptagon")
+elif entry == 8:
+    print("Octagon")
+elif entry == 9:
+    print("Nonagon")
+elif entry == 10:
+    print("Decagon")
 
 #########################################################################################
 # 
@@ -95,15 +95,15 @@
 # program should display the number of days in that month. Display “28 or 29 days”
 # for February so that leap years are addressed.
 
-# entry = str.lower(input("Enter the month: "))
-# if entry == "january" or entry == "march" or entry == "may" or entry == "july" or entry == "august" or entry == "october" or entry == "december":
-#     print(31)
-# elif entry == "february":
-#     print("28 or 29")
-# elif entry == "april" or entry == "june" or entry == "september" or entry == "november":
-#     print(30)
-# else:
-#     print("Not a valid month")
+entry = str.lower(input("Enter the month: "))
+if entry == "january" or entry == "march" or entry == "may" or entry == "july" or entry == "august" or entry == "october" or entry == "december":
+    print(31)
+elif entry == "february":
+    print("28 or 29")
+elif entry == "april" or entry == "june" or entry == "september" or entry == "november":
+    print(30)
+else:
+    print("Not a valid month")
 #########################################################################################
 # Exercise 39 - Sound Levels
 #
@@ -122,25 +122,25 @@
 # reasonable output for a value smaller than the quietest noise in the table, and for a
 # value larger than the loudest noise in the table
 
-# entry = int(input("Enter the sound level in dBs: "))
-# if entry == 130:
-#     print("jackhammer")
-# elif entry == 106:
-#     print("Gas lawnmower")    
-# elif entry == 70:
-#     print("Alarm clock")
-# elif entry == 40:
-#     print("Quiet room")
-# elif entry >130:
-#     print("louder than a jackhammer")
-# elif entry >106:
-#     print("Between Gas lawnmower and jackhammer")
-# elif entry >70:
-#     print("Between Alarm clock and Gas lawnmower")
-# elif entry >40:
-#     print("Between quiet room and Alarm clock")
-# else:
-#     print("Quieter than a quiet room!")
+entry = int(input("Enter the sound level in dBs: "))
+if entry == 130:
+    print("jackhammer")
+elif entry == 106:
+    print("Gas lawnmower")    
+elif entry == 70:
+    print("Alarm clock")
+elif entry == 40:
+    print("Quiet room")
+elif entry >130:
+    print("louder than a jackhammer")
+elif entry >106:
+    print("Between Gas lawnmower and jackhammer")
+elif entry >70:
+    print("Between Alarm clock and Gas lawnmower")
+elif entry >40:
+    print("Between quiet room and Alarm clock")
+else:
+    print("Quieter than a quiet room!")
 #########################################################################################
 # Exercise 40: Name that Triangle
 # A triangle can be classified based on the lengths of its sides as equilateral, isosceles
@@ -149,15 +149,15 @@
 # length. If all of the sides have different lengths then the triangle is scalene.
 # Write a program that reads the lengths of 3 sides of a triangle from the user.
 # Display a message indicating the type of the triangle.
-# side1 = int(input("Enter the length of side 1: "))
-# side2 = int(input("Enter the length of side 2: "))
-# side3 = int(input("Enter the length of side 3: "))
-# if side1 == side2 == side3:
-#     print("Equilateral")
-# elif side1 != side2 and side2 != side3 and side1 != side3:
-#     print("Scalene")
-# else: 
-#     print("Isosceles")
+side1 = int(input("Enter the length of side 1: "))
+side2 = int(input("Enter the length of side 2: "))
+side3 = int(input("Enter the length of side 3: "))
+if side1 == side2 == side3:
+    print("Equilateral")
+elif side1 != side2 and side2 != side3 and side1 != side3:
+    print("Scalene")
+else: 
+    print("Isosceles")
 #
 #########################################################################################
 # Exercise 41 - Note to Frequency
@@ -185,28 +185,28 @@
 # By using this relationship, you should be able to add support for the additional notes
 # without adding additional cases to your if statement
 
-# entry = str.upper(input("Enter the note/octave: "))
-# entry_note = entry[0]
-# entry_octave = int(entry[1])
-# print(entry_note)
+entry = str.upper(input("Enter the note/octave: "))
+entry_note = entry[0]
+entry_octave = int(entry[1])
+print(entry_note)
 
-# if entry_note == "C":
-#     base_result = 261.63
-# elif entry_note == "D":
-#     base_result = 293.66
-# elif entry_note =="E":
-#     base_result = 329.63
-# elif entry_note =="F":
-#     base_result = 349.23
-# elif entry_note =="G":
-#     base_result = 392.00
-# elif entry_note == "A":
-#     base_result = 440.00
-# elif entry_note =="B":
-#     base_result = 493.88
+if entry_note == "C":
+    base_result = 261.63
+elif entry_note == "D":
+    base_result = 293.66
+elif entry_note =="E":
+    base_result = 329.63
+elif entry_note =="F":
+    base_result = 349.23
+elif entry_note =="G":
+    base_result = 392.00
+elif entry_note == "A":
+    base_result = 440.00
+elif entry_note =="B":
+    base_result = 493.88
 
-# entry_frequency = base_result/2**(4-entry_octave)
-# print(entry_frequency)
+entry_frequency = base_result/2**(4-entry_octave)
+print(entry_frequency)
 #########################################################################################
 
 # Exercise 43 - Faces on Money
@@ -224,23 +224,23 @@
 # Ulysses S. Grant | $50
 # Benjamin Franklin | $100
 #
-# entry = int(input("Enter the banknote: "))
-# if entry == 1:
-#     print("George Washington")
-# elif entry == 2:
-#     print("Thomas Jefferson")
-# elif entry == 5:
-#     print("Abraham Lincoln")
-# elif entry == 10:
-#     print("Alexander Hamilton")
-# elif entry == 20:
-#     print("Andrew Jackson")
-# elif entry == 50:
-#     print("Ulysses S. Grant")
-# elif entry == 100:
-#     print("Benjamin Franklin")
-# else:
-#     print("No such banknote")
+entry = int(input("Enter the banknote: "))
+if entry == 1:
+    print("George Washington")
+elif entry == 2:
+    print("Thomas Jefferson")
+elif entry == 5:
+    print("Abraham Lincoln")
+elif entry == 10:
+    print("Alexander Hamilton")
+elif entry == 20:
+    print("Andrew Jackson")
+elif entry == 50:
+    print("Ulysses S. Grant")
+elif entry == 100:
+    print("Benjamin Franklin")
+else:
+    print("No such banknote")
 #########################################################################################
 # Exercise 44: Date to Holiday Name
 #
@@ -254,15 +254,15 @@
 # holiday’s name. Otherwise your program should indicate that the entered month and
 # day do not correspond to a fixed-date holiday.
 #
-# day = int(input("Enter the day: "))
-# month = input("Enter the month: ")
-# if day == 1 and month == "January":
-#     print("New year's day")
-# elif day == 1 and month == "July":
-#     print("Canada Day")
-# elif day ==25 and month == "December":
-#     print("Christmas Day")
-# else:
-#     print("Date does not correspond to a national holiday")
+day = int(input("Enter the day: "))
+month = input("Enter the month: ")
+if day == 1 and month == "January":
+    print("New year's day")
+elif day == 1 and month == "July":
+    print("Canada Day")
+elif day ==25 and month == "December":
+    print("Christmas Day")
+else:
+    print("Date does not correspond to a national holiday")
 # #
 #########################################################################################
